@@ -1,4 +1,4 @@
-package com.example.cryptoapp
+package com.example.cryptoapp.livedata
 
 data class WSResponse(
     val price: Double,
