@@ -3,4 +3,6 @@
     <string name="menu_item_one">Menu Item One</string>
     <string name="menu_item_two">Menu Item Two</string>
     <string name="menu_item_three">Menu Item Three</string>
+    <string name="navigation_header">Navigation Header</string>
+    <string name="navigation_menu">Navigation Menu</string>
 </resources>

@@ -17,9 +17,15 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            buildConfigField 'String', "ApiKey", CryptoApp_CoinAPIKey
+            resValue 'string', "api_key", CryptoApp_CoinAPIKey
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', "ApiKey", CryptoApp_CoinAPIKey
+            resValue 'string', "api_key", CryptoApp_CoinAPIKey
         }
     }
     compileOptions {
