@@ -20,11 +20,13 @@ android {
         debug {
             buildConfigField 'String', "ApiKey", CryptoApp_CoinAPIKey
             resValue 'string', "api_key", CryptoApp_CoinAPIKey
+            buildConfigField 'String', "MarketCapApiKey", CryptoApp_MarketCapAPIKey_Sandbox
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField 'String', "ApiKey", CryptoApp_CoinAPIKey
+            buildConfigField 'String', "MarketCapApiKey", CryptoApp_MarketCapAPIKey_Sandbox
             resValue 'string', "api_key", CryptoApp_CoinAPIKey
         }
     }
